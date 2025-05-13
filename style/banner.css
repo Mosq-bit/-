@@ -1,4 +1,6 @@
-.banner__section {}
+.banner__section {
+    overflow-x: hidden;
+}
 
 .banner {
     display: flex;
@@ -36,7 +38,7 @@
     margin: 0 auto;
     width: min(100%, 1037px);
     height: 477px;
-    background-image: url(/-/assets/img/hero-pic.svg);
+    background-image: url(/assets/img/hero-pic.svg);
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
@@ -62,12 +64,10 @@
 }
 
 .banner__btn {
-    margin-top: 10px;
-    padding: 15px 0;
-    
     width: 100%;
     max-width: 363px;
 
+    padding: 15px 0;
     position: relative;
     top: -37px;
 
@@ -241,11 +241,22 @@
         height: 350px;
         order: -1;
     }
+    .banner__btn{
+
+    max-width: 300px;
+    padding: 8px 0;
+    font-size: 15px;
+    }
+    .modal__btn {
+        padding: 13px 13px;
+        font-weight: 400;
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 768px) {
     .banner__section {
-        padding: 40px 0;
+        padding: 40px 10px;
     }
     .banner__title {
         font-size: 36px;
