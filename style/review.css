@@ -96,12 +96,12 @@
 }
 
 .review__swiper-button-next {
-    content: url(/assets/img/review__arrow-rt.svg);
+    content: url(/-/assets/img/review__arrow-rt.svg);
     right: -1px;
 }
 
 .review__swiper-button-prev {
-    content: url(/assets/img/review__arrow-lt.svg);
+    content: url(/-/assets/img/review__arrow-lt.svg);
     left: -1px;
 }
 
