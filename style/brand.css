@@ -1,0 +1,57 @@
+.brand__section {
+    padding: 60px 0 35px;
+    overflow: hidden; /* На случай, если логотипы выходят за границы */
+}
+
+.brand__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap; /* Логотипы переносятся на новую строку при нехватке места */
+}
+
+.brand__link {
+    display: inline-block; /* Для корректного отображения картинок */
+    flex: 1; /* Равномерное распределение пространства */
+    min-width: 120px; /* Минимальная ширина логотипа */
+    text-align: center; /* Центрирование картинки */
+}
+
+.brand__pic {
+    max-width: 100%; /* Чтобы картинка не выходила за границы */
+    height: auto; /* Сохранение пропорций */
+    object-fit: contain; /* Лучшее отображение без искажений */
+}
+
+/* Адаптация под планшеты */
+@media (max-width: 950px) {
+    .brand__wrapper {
+        gap: 10px;
+    }
+    .brand__link {
+        min-width: 100px; /* Уменьшаем минимальную ширину */
+    }
+}
+
+/* Адаптация под мобильные устройства */
+@media (max-width: 768px) {
+    .brand__section {
+        padding: 40px 0 25px; /* Уменьшаем отступы */
+    }
+    .brand__wrapper {
+        justify-content: center; /* Центрируем логотипы */
+        gap: 15px 20px; /* Горизонтальный и вертикальный отступы */
+    }
+    .brand__link {
+        flex: 0 0 calc(33.333% - 20px); /* 3 логотипа в ряд */
+        min-width: auto;
+    }
+}
+
+/* Для очень маленьких экранов (например, 480px) */
+@media (max-width: 480px) {
+    .brand__link {
+        flex: 0 0 calc(50% - 15px); /* 2 логотипа в ряд */
+    }
+}

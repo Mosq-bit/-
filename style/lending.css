@@ -1,0 +1,196 @@
+.lending__section {
+    position: relative;
+}
+
+.lending__section::after {
+    background-color: var(--blue);
+    content: "";
+    opacity: 0.05;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.lending {
+    padding-top: 46px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lending__title {
+    text-align: center;
+    font-weight: 400;
+    font-size: 36px;
+    color: var(--blue);
+}
+
+.lending__wrapper {
+    margin-top: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 51px;
+}
+
+.lending__subtitle {
+    text-align: center;
+    margin-top: 49px;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--white);
+    opacity: 0.7;
+}
+
+.lending__descr {
+    max-width: 253px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.lending__descr-title {
+    font-weight: 400;
+    font-size: 36px;
+}
+
+.lending__prices {
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--blue);
+}
+
+.lending__info {
+    margin-top: 21px;
+    font-family: var(--second-family);
+    font-weight: 300;
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+.lending__btn {
+    margin-top: 28px;
+    padding: 8px 35px 10px 33px;
+    border-radius: 50px;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 18px;
+    background-color: var(--blue);
+}
+
+.lending__percent {
+    padding-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    color: var(--white);
+    opacity: 0.7;
+}
+
+.lending__percent-lt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lending__percent span {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.lending__percent p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.lending__line {
+
+    border: 1px solid rgba(241, 241, 241, 0.3);
+    width: 51px;
+    height: 0px;
+    transform: rotate(-90deg);
+}
+
+.lending__percent-rt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.lending__subtitle-percent{
+    display: none;
+}
+
+.lending-pic {
+    margin-top: 4px;
+    width: 542px;
+}
+.arrow__links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow__links:hover{
+    scale: 1.2;
+}
+
+@media (max-width:960px) {
+    .lending__descr-title {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .lending__prices {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .lending__info {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .lending__btn {
+        display: block;
+        margin: 10px auto;
+        font-size: 16px;
+    }
+
+    .lending__percent span {
+        font-size: 30px;
+    }
+
+    .lending__percent p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:720px) {
+    .lending__subtitle {
+        display: none;
+    }
+    .lending__subtitle-percent{
+        display: block;
+    }
+
+    .lending__wrapper {
+        margin-top: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+}
+@media (max-width:570px){
+    .lending__title {
+        font-size: 24px;
+    }
+    .lending__descr-title {
+        font-size: 20px;
+    }
+}

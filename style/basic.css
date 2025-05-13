@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+html{
+    /* плавный скрол */
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Russo One", sans-serif;
+    font-weight: 300;
+    color: var(--white);
+    background-color: var(--grey);
+}
+
+.big-container{
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1470px;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1140px;
+
+}
+
+
+.btn{
+    transition: all .2s ease-in;
+}
+
+.btn:hover{
+    opacity: .8;
+}
+
+
+
+
+.none{
+    display: none;
+}

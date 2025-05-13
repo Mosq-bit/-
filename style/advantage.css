@@ -1,0 +1,237 @@
+.advantage__section {
+    margin: 17px 0 0 0;
+}
+
+.advantage__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.advantage__title {
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+}
+
+.advantage__cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 29px;
+}
+
+.advantage__column {
+    width: 100%;
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+}
+
+.advantage__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    text-align: center;
+}
+
+.advantage__card-subtitle {
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--blue);
+}
+
+.advantage__card-descr {
+    font-family: var(--second-family);
+    font-size: 16px;
+    color: var(--white);
+    opacity: 0.4;
+}
+
+.second {
+    margin-top: 50px;
+    align-self: stretch;
+}
+
+.advantage__sale {
+    margin-top: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    
+}
+
+.advantage__sale-pic {
+    width: 100%;
+    max-width: 628px;
+    height: auto;
+}
+
+.advantage__sale-descr {
+    font-weight: 400;
+    font-size: 35px;
+
+}
+
+.advantage__sale-descr strong {
+    color: var(--blue);
+}
+
+.advantage__sale-link {
+    margin-top: 27px;
+    padding: 7px 19px;
+
+    font-family: var(--second-family);
+    font-weight: 800;
+    font-size: 14px;
+    color: var(--white);
+    background-color: var(--blue);
+    text-decoration: none;
+
+}
+
+
+/* Адаптив для больших планшетов (992px - 1200px) */
+@media (max-width: 1200px) {
+    .advantage__sale {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .advantage__sale-descr {
+        text-align: center;
+        min-width: auto;
+    }
+
+    .advantage__sale-pic {
+        max-width: 100%;
+    }
+}
+
+/* Адаптив для планшетов (768px - 992px) */
+@media (max-width: 992px) {
+    .advantage__cards {
+        flex-wrap: wrap;
+    }
+
+    .advantage__column {
+        max-width: 45%;
+    }
+
+    .second {
+        margin-top: 0;
+        order: 3;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 100%;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .second .advantage__card {
+        flex: 0 0 45%;
+        max-width: 45%;
+    }
+
+    .advantage__sale-descr {
+        font-size: 28px;
+    }
+}
+
+/* Адаптив для небольших планшетов (576px - 768px) */
+@media (max-width: 768px) {
+    .advantage__title {
+        font-size: 32px;
+    }
+
+    .advantage__wrapper {
+        gap: 20px;
+    }
+
+    .advantage__cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .advantage__column {
+        max-width: 100%;
+        gap: 20px;
+    }
+
+    .second {
+        flex-direction: column;
+    }
+
+    .second .advantage__card {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .advantage__card-subtitle {
+        font-size: 22px;
+    }
+
+    .advantage__card-descr {
+        font-size: 15px;
+    }
+
+    .advantage__sale-descr {
+        font-size: 24px;
+    }
+}
+
+/* Адаптив для мобильных устройств (до 576px) */
+@media (max-width: 576px) {
+    .advantage__title {
+        font-size: 28px;
+    }
+
+    .advantage__card {
+        gap: 8px;
+    }
+
+    .advantage__card-subtitle {
+        font-size: 20px;
+    }
+
+    .advantage__card-descr {
+        font-size: 14px;
+    }
+
+    .advantage__sale-descr {
+        font-size: 20px;
+    }
+
+    .advantage__sale-descr p {
+        font-size: 16px;
+    }
+
+    .advantage__sale-link {
+        padding: 6px 10px;
+        font-size: 8px;
+
+    }
+
+    /* Адаптив для очень маленьких экранов (до 400px) */
+    @media (max-width: 400px) {
+        .advantage__title {
+            font-size: 24px;
+        }
+
+        .advantage__card-subtitle {
+            font-size: 18px;
+        }
+
+        .advantage__sale-descr {
+            font-size: 18px;
+        }
+    }
+}

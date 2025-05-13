@@ -1,0 +1,213 @@
+.dark__blue-section {
+    position: relative;
+    background-color: rgba(33, 148, 255, 0.05);
+}
+
+.order__wrapper {
+    padding: 34px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.order__title {
+    font-weight: 400;
+    font-size: 36px;
+    color: var(--blue);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.slider-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 720px;
+    margin: 32px auto 0;
+    overflow: hidden;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.slider {
+    display: flex;
+    gap: 12px;
+    margin-top: 37px;
+    transition: transform 0.5s ease;
+    width: 100%; /* Добавлено для надежности */
+}
+
+.slide {
+    min-width: 100%;
+    flex-shrink: 0;
+    position: relative;
+    box-sizing: border-box; /* На случай padding/border */
+}
+
+.slide img {
+    width: 100%;
+    max-width: 596px;
+    display: block;
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto; /* Центрирование */
+}
+
+.slide-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.pagination-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pagination-dot.active {
+    background-color: #333;
+}
+
+.pagination-btn {
+    padding: 8px 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 164px;
+    border-radius: 20px;
+    background: rgba(241, 241, 241, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    color: var(--white);
+    text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.25);
+    opacity: 0.7;
+    font-size: 14px;
+}
+
+.pagination-btn.active {
+    background-color: var(--blue);
+    opacity: 1;
+}
+
+.order__btn {
+    width: 100%;
+    max-width: 280px;
+    padding: 12px 0;
+    border-radius: 11px;
+    box-shadow: inset 0 4px 12px 0 rgba(0, 0, 0, 0.45);
+    background: #2194ff;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+    margin: 0 auto;
+    transform: translateY(-37px);
+    cursor: pointer; /* Добавлено для UX */
+}
+
+.order__btn:hover {
+    opacity: 0.8;
+}
+
+.order__btn:active {
+    transform: translateY(-35px); /* Более плавное смещение */
+    box-shadow: inset 0 2px 8px 0 rgba(0, 0, 0, 0.45);
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    .order__wrapper {
+        padding: 24px 15px;
+    }
+    
+    .order__title {
+        font-size: 28px;
+    }
+    
+    .slider-container {
+        margin-top: 10px;
+        padding: 0 15px;
+    }
+    
+    .slide-content {
+        padding: 10px;
+        font-size: 12px;
+    }
+    
+    .slide img {
+        max-width: 340px;
+    }
+    
+    .order__btn {
+        font-size: 18px;
+        padding: 10px 0;
+        max-width: 240px;
+        transform: translateY(-30px);
+    }
+}
+
+@media (max-width: 600px) {
+    .order__title {
+        font-size: 26px;
+    }
+    
+    .pagination {
+        gap: 12px;
+    }
+    
+    .pagination-dot {
+        width: 8px;
+        height: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .order__title {
+        font-size: 24px;
+    }
+    
+    .slider-container {
+        padding: 0 10px;
+    }
+    
+    .pagination {
+        gap: 8px;
+    }
+    
+    .order__btn {
+        margin-top: 10px;
+        font-size: 16px;
+        max-width: 200px;
+        transform: translateY(-25px);
+    }
+    
+    .slide img {
+        max-width: 180px;
+        height: auto; /* Сохраняет пропорции */
+    }
+    
+    .pagination-btn {
+        max-width: 120px; /* Увеличен для читаемости */
+        font-size: 12px;
+    }
+}

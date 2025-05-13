@@ -1,0 +1,145 @@
+.map__section {
+    margin-top: 40px;
+    padding: 0 15px; /* Добавляем отступы по бокам для мобильных */
+}
+
+.map__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    border-radius: 33px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
+    background: var(--white);
+    overflow: hidden; /* Обрезаем тень и скругления внутри */
+}
+
+.map__info {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0 40px 40px;
+    gap: 16px;
+    flex: 1; /* Занимает доступное пространство */
+    min-width: 300px; /* Минимальная ширина блока */
+}
+
+.map__title {
+    font-weight: 400;
+    font-size: 36px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--blue);
+    margin: 0;
+}
+
+.map__subtitle {
+    padding-bottom: 21px;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #1b2639;
+    border-bottom: 1px solid rgba(27, 38, 57, 0.2);
+    margin: 0;
+}
+
+.map__info span {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: var(--blue);
+}
+
+.map__address {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+address {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 18px;
+    color: #1b2639;
+    font-style: normal; /* Убираем курсив для address */
+}
+
+.map__tel {
+    margin-top: 29px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.map__tel a {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 18px;
+    color: #1b2639;
+    text-decoration: none; /* Убираем подчеркивание */
+    transition: color 0.3s ease;
+}
+
+.map__tel a:hover {
+    color: var(--blue); /* Эффект при наведении */
+}
+
+.map__card {
+    flex: 1; /* Карта занимает оставшееся место */
+    min-height: 400px; /* Минимальная высота */
+    background: #eee; /* Заглушка, если карта не загрузилась */
+}
+
+/* ===== Адаптация под планшеты (1024px и меньше) ===== */
+@media (max-width: 1024px) {
+    .map__wrapper {
+        gap: 20px;
+    }
+    .map__info {
+        padding: 30px 0 30px 30px;
+    }
+    .map__title {
+        font-size: 30px;
+    }
+}
+
+/* ===== Адаптация под планшеты (768px и меньше) ===== */
+@media (max-width: 768px) {
+    .map__wrapper {
+        flex-direction: column; /* Меняем направление на вертикальное */
+        gap: 0;
+    }
+    .map__info {
+        padding: 30px;
+        min-width: auto;
+        width: 100%;
+    }
+    .map__card {
+        width: 100%;
+        min-height: 300px; /* Уменьшаем высоту карты */
+    }
+}
+
+/* ===== Адаптация под мобильные (480px и меньше) ===== */
+@media (max-width: 480px) {
+    .map__section {
+        margin-top: 20px;
+    }
+    .map__wrapper {
+        border-radius: 20px; /* Меньше скругление */
+    }
+    .map__info {
+        padding: 20px;
+    }
+    .map__title {
+        font-size: 24px;
+    }
+    .map__subtitle, 
+    .map__info span,
+    address,
+    .map__tel a {
+        font-size: 16px;
+    }
+}

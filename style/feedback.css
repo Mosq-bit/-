@@ -1,0 +1,143 @@
+.feedback__section {
+    /* Добавляем отступы для секции */
+    padding: 20px 0;
+}
+
+.feedback__form {
+    padding-top: 55px;
+}
+
+.form__section-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 39px;
+    /* Добавляем адаптивность для контейнера */
+    flex-wrap: wrap;
+}
+
+.form {
+    width: 100%;
+    max-width: 567px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    /* Добавляем минимальную ширину для формы */
+    min-width: 300px;
+    flex: 1;
+}
+
+.form__title {
+    font-weight: 400;
+    font-size: 36px;
+    color: var(--white);
+    /* Адаптивный размер шрифта */
+    font-size: clamp(24px, 5vw, 36px);
+}
+
+input {
+    width: 100%; /* Меняем фиксированную ширину на 100% */
+    max-width: 402px; /* Добавляем максимальную ширину */
+    padding: 0 0 0 20px;
+    height: 51px;
+    border: 1px solid #dedede;
+    border-radius: 10px;
+    box-shadow: inset 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    background: #fff;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: rgba(45, 45, 45, 0.5);
+}
+
+.form__text {
+    height: 112px;
+    resize: vertical; /* Позволяет пользователю изменять высоту */
+}
+
+.form__btn {
+    width: 100%;
+    max-width: 220px; /* Добавляем максимальную ширину */
+    height: 47px;
+    border-radius: 50px;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    background-color: var(--blue);
+    /* Адаптивный размер шрифта */
+    font-size: clamp(16px, 4vw, 18px);
+    /* Делаем кнопку более кликабельной на мобильных */
+    padding: 10px 20px;
+}
+
+.feedback__avatar {
+    /* Добавляем адаптивность для аватара */
+    flex: 1;
+    min-width: 300px;
+    position: relative;
+}
+
+.feedback__avatar img {
+    border-radius: 40px;
+    width: 100%;
+    max-width: 366px;
+    height: auto; /* Меняем фиксированную высоту на auto */
+    aspect-ratio: 366/454; /* Сохраняем пропорции */
+}
+
+.feedback__avatar-content {
+    position: absolute;
+    bottom: 20px; /* Изменяем позиционирование */
+    left: 20px;
+    width: calc(100% - 40px); /* Адаптивная ширина */
+    max-width: 209px;
+    padding: 13px 21px 19px 26px;
+    font-weight: 400;
+    font-size: clamp(16px, 3vw, 24px); /* Адаптивный размер шрифта */
+    background: var(--blue);
+    opacity: 0.8;
+    border-radius: 20px;
+}
+
+.content__descr {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: clamp(14px, 3vw, 16px); /* Адаптивный размер шрифта */
+}
+
+/* Медиа-запросы для дополнительной адаптивности */
+@media (max-width: 768px) {
+    .form__section-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .feedback__form {
+        padding-top: 20px;
+    }
+    
+    .feedback__avatar {
+        order: -1; /* Перемещаем аватар вверх на мобильных */
+    }
+    
+    .feedback__avatar-content {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form {
+        padding: 0;
+    }
+    
+    .form__btn {
+        max-width: 100%;
+    }
+}

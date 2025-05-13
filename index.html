@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <title>Атлант Газ</title>
+</head>
+
+<body>
+    <div class="big-container">
+        <header class="header__section">
+
+            <div class="header">
+                <div class="header__column">
+                    <div class="header__logo">
+                        <img class="header__logo-pic" src="/assets/img/Logo.svg" alt="">
+                        <div class="header__line"></div>
+                    </div>
+                    <p class="header__subtitle">
+                        Расправь плечи
+                        в теплом доме
+                    </p>
+                </div>
+                <div class="header__question">
+                    <a href="tel:+79263306834" class="header__question-tel">+7 926 330-68-34</a>
+                    <a href="#" class="header__question-link">Срочный вопрос</a>
+                </div>
+            </div>
+        </header>
+        <section class="banner__section">
+            <div class="banner">
+                <div class="banner__content">
+                    <div class="banner__content-delivery">
+                        <div class="banner__content-delivery-lt">
+                            <img src="/assets/img/Group-1.svg" alt="">
+                            <p>В любое время дня и ночи</p>
+                        </div>
+                        <div class="banner__content-delivery-rt">
+                            <img src="/assets/img/Group-2.svg" alt="">
+                            <p>Вне зависимости от погодных условий</p>
+                        </div>
+                    </div>
+                    <h3 class="banner__title">
+                        Доставим газ <br> за 4 часа
+                    </h3>
+
+                    <div class="banner__subtitle">
+                        <p>в любую точку Москвы <br>
+                            и Московской области</p>
+                        <img class="banner__subtitle-pic" src="/assets/img/hero-arrow.svg" alt="">
+                    </div>
+                    <button class="banner__btn modal-btn" id="openModal1">
+                        Заказать доставку газа <br> в газгольдер
+                    </button>
+
+                    <div class="modal" id="modal1">
+                        <div class="modal-content">
+                            <button class="close-btn" id="closeModal1">&times;</button>
+                            <h2>Доставим газ <br>
+                                за 4 часа</h2>
+                            <form action="" class="modal__form">
+                                <input id="input-name" type="text" placeholder="Имя" class="modal-form__name">
+                                <input id="input-tel" type="tel" placeholder="Телефон" class="modal-form__tel">
+                            </form>
+                            <button class="modal__btn" id="openModal2">Заказать доставку газа</button>
+                        </div>
+                    </div>
+                    <div class="modal" id="modal2">
+                        <div class="modal-content">
+                            <button class="close-btn" id="closeModal2">&times;</button>
+                            <h2>Спасибо за обращение</h2>
+                            <p> наш специалист свяжется <br>
+                                с вами в ближайшее время</p>
+                            <button class="modal__btn" id="visit">Вернуться на сайт</button>
+                        </div>
+                    </div>
+
+                    <p class="banner__content-price">Доставка газа всегда по актуальным ценам</p>
+                </div>
+                <div class="banner__pic">
+                </div>
+            </div>
+        </section>
+    </div>
+    <main>
+        <section class="lending__section">
+            <div class="container">
+                <div class="lending">
+                    <h4 class="lending__title">
+                        Стоимость газа в ваш газгольдер сегодня
+                    </h4>
+                    <p class="lending__subtitle">
+                        Идеальное соотношение
+                    </p>
+                    <div class="lending__wrapper">
+                        <div class="lending__descr propane">
+                            <div class="lending__content propane__content">
+                                <p class="lending__descr-title propane__title">
+                                    Пропан
+                                </p>
+                                <p class="lending__prices propane__price">
+                                    от 25 рублей за литр
+                                </p>
+                                <p class="lending__info propane__info">
+                                    Физически испарение происходит до -40 градусов, что позволяет использовать его в
+                                    наших с вами погодных условиях
+                                </p>
+                                <button class="lending__btn propane__btn">Заказать</button>
+                            </div>
+                        </div>
+                        <p class="lending__subtitle-percent">
+                            Идеальное соотношение
+                        </p>
+                        <div class="lending__percent">
+                            <div class="lending__percent-lt">
+                                <span>80%</span>
+                                <p>пропана</p>
+                            </div>
+                            <div class="lending__line"></div>
+                            <div class="lending__percent-rt">
+                                <span>20%</span>
+                                <p>бутана</p>
+                            </div>
+                            <img class="lending-pic" src="/assets/img/lending-pic.svg" alt="">
+                        </div>
+                        <div class="lending__descr lending__butane">
+                            <div class="lending__content butane__content">
+                                <p class="lending__descr-title butane__title">
+                                    Бутан
+                                </p>
+                                <p class="lending__prices butane__price">
+                                    от 16 рублей за литр
+                                </p>
+                                <p class="lending__info butane__info">
+                                    Испарение Бутана происходит только до 0 градусов и годится для использования в
+                                    тёплое время года
+                                </p>
+                                <button class="lending__btn butane__btn">Заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <div class="arrow__links">
+                <a href="#" class="arrow__link">
+                    <img src="/assets/img/link__arrow.svg" alt="" class="arrow-pic">
+                </a>
+            </div>
+        </div>
+        <section class="advantage__section">
+            <div class="container">
+                <div class="advantage__wrapper">
+                    <h3 class="advantage__title">
+                        Преимущества работы с нашей компанией
+                    </h3>
+                    <div class="advantage__cards">
+                        <div class="advantage__column first">
+                            <div class="advantage__card">
+                                <img class="advantage__card-pic" src="/assets/img/advantage-1.svg" alt="">
+                                <p class="advantage__card-subtitle">Экономия
+                                    на хранилище</p>
+                                <p class="advantage__card-descr">за счёт собственных цистерн
+                                    на нашей базе</p>
+                            </div>
+                            <div class="advantage__card">
+                                <img class="advantage__card-pic" src="/assets/img/advantage-2.svg" alt="">
+                                <p class="advantage__card-subtitle">Любые объёмы поставки качественного газа</p>
+                                <p class="advantage__card-descr">вы получаете объем от 1 тонны до 20 тонн, с
+                                    сертификатом качества газа</p>
+                            </div>
+                            <div class="advantage__card">
+                                <img class="advantage__card-pic" src="/assets/img/advantage-3.svg" alt="">
+                                <p class="advantage__card-subtitle">Длина заправочных
+                                    рукавов — 50 метров</p>
+                                <p class="advantage__card-descr">не требуется подъезд автомобиля вплотную к резервуару
+                                </p>
+                            </div>
+                        </div>
+                        <div class="advantage__column second">
+                            <div class="advantage__card">
+                                <img class="advantage__card-pic" src="/assets/img/advantage-4.svg" alt="">
+                                <p class="advantage__card-subtitle">Экономия
+                                    на транспорте</p>
+                                <p class="advantage__card-descr">более 10 собственный газовозов</p>
+                            </div>
+                            <div class="advantage__card">
+                                <img class="advantage__card-pic" src="/assets/img/advantage-5.svg" alt="">
+                                <p class="advantage__card-subtitle">Оплата удобным
+                                    для вас способом</p>
+                                <p class="advantage__card-descr">все газовозы оснащены терминалами для оплаты вашего
+                                    заказа</p>
+                            </div>
+                            <div class="advantage__card">
+                                <img class="advantage__card-pic" src="/assets/img/advantage-6.svg" alt="">
+                                <p class="advantage__card-subtitle">Доставка сжиженного газа
+                                    в формате 24/7</p>
+                                <p class="advantage__card-descr">привезем газ в удобное для вас время или же по графику
+                                </p>
+                            </div>
+                        </div>
+                        <div class="advantage__column third">
+                            <div class="advantage__card">
+                                <img class="advantage__card-pic" src="/assets/img/advantage-7.svg" alt="">
+                                <p class="advantage__card-subtitle">Поставки напрямую
+                                    от производителей</p>
+                                <p class="advantage__card-descr">нет наценки на стоимость газа как у перекупщиков и
+                                    небольших частных компаний</p>
+                            </div>
+                            <div class="advantage__card">
+                                <img class="advantage__card-pic" src="/assets/img/advantage-8.svg" alt="">
+                                <p class="advantage__card-subtitle">Чистый газ
+                                    без примесей</p>
+                                <p class="advantage__card-descr">нет наценки на стоимость газа как у перекупщиков и
+                                    небольших частных компаний</p>
+                            </div>
+                            <div class="advantage__card">
+                                <img class="advantage__card-pic" src="/assets/img/advantage-9.svg" alt="">
+                                <p class="advantage__card-subtitle">Аттестованный
+                                    персонал</p>
+                                <p class="advantage__card-descr">квалифицированные сотрудники проведут полную
+                                    консультацию и дадут рекомендации, если такие нужны будут</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advantage__sale">
+                        <div class="advantage__sale-pic">
+                            <img src="/assets/img/transp.svg" alt="">
+                        </div>
+                        <div class="advantage__sale-descr">
+                            <p>Благодаря нашему собственному автопарку мы можем
+                                давать гарантию, что доставим <strong> за 4 часа</strong></p>
+                            <a href="#" class="advantage__sale-link">Это сильное конкурентное преимущество, которым мы
+                                дорожим</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="order__section dark__blue-section">
+            <div class="container">
+                <div class="order__wrapper">
+                    <h2 class="order__title">Выберите свой объём Газовоза</h2>
+
+                    <div class="slider-container">
+                        <div class="pagination">
+                            <button class="pagination-btn active" data-index="0">
+                                <p>Малый</p>
+                                <p>2000 л.</p>
+                            </button>
+                            <button class="pagination-btn" data-index="1">
+                                <p>Средний</p>
+                                <p>6000 л.</p>
+                            </button>
+                            <button class="pagination-btn" data-index="2">
+                                <p>Стандартный</p>
+                                <p>10 000 л.</p>
+                            </button>
+                            <button class="pagination-btn" data-index="3">
+                                <p>Оптовый</p>
+                                <p>40 000 л.</p>
+                            </button>
+                        </div>
+                        <div class="slider">
+                            <div class="slide active">
+                                <img src="/assets/img/01.png" alt="Малый - 2000 л.">
+                            </div>
+                            <div class="slide">
+                                <img src="/assets/img/02.png" alt="Средний - 6000 л.">
+                            </div>
+                            <div class="slide">
+                                <img src="/assets/img/03.png" alt="Стандартный - 10 000 л.">
+                            </div>
+                            <div class="slide">
+                                <img src="/assets/img/04 .png" alt="Стандартный - 10 000 л.">
+                            </div>
+                        </div>
+                        <button class="order__btn">Заказать газ</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="review__section">
+            <div class="container">
+                <div class="review__wrapper">
+                    <h3 class="review__title">Отзывы наших клиентов</h3>
+                    <div class="review__slider swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="review__slide swiper-slide">
+                                <div class="review__pic">
+                                    <img src="/assets/img/rewiew__avatr.png" alt="Аватар Ольга И.">
+                                </div>
+                                <div class="review__info">
+                                    <h4 class="review__name">Ольга И.</h4>
+                                    <p class="review__city">Красногорск</p>
+                                    <p class="review__text">Я всегда боюсь газа, а скоро не боюсь что он может
+                                        возразиться,
+                                        как же мне помог Андрей водителя экспедитор показал что бояться тут нечего о
+                                        самое
+                                        главное место присутствие даже не понадобилось. Спасибо, скитания за то что они
+                                        все
+                                        закрыли этот вопрос под ключ.</p>
+                                </div>
+                            </div>
+                            <div class="review__slide swiper-slide">
+                                <div class="review__pic">
+                                    <img src="/assets/img/rewiew__avatr.png" alt="Аватар Ольга И.">
+                                </div>
+                                <div class="review__info">
+                                    <h4 class="review__name">Ольга И.</h4>
+                                    <p class="review__city">Красногорск</p>
+                                    <p class="review__text">Я всегда боюсь газа, а скоро не боюсь что он может
+                                        возразиться,
+                                        как же мне помог Андрей водителя экспедитор показал что бояться тут нечего о
+                                        самое
+                                        главное место присутствие даже не понадобилось. Спасибо, скитания за то что они
+                                        все
+                                        закрыли этот вопрос под ключ.</p>
+                                </div>
+                            </div>
+                            <div class="review__slide swiper-slide">
+                                <div class="review__pic">
+                                    <img src="/assets/img/rewiew__avatr.png" alt="Аватар Ольга И.">
+                                </div>
+                                <div class="review__info">
+                                    <h4 class="review__name">Ольга И.</h4>
+                                    <p class="review__city">Красногорск</p>
+                                    <p class="review__text">Я всегда боюсь газа, а скоро не боюсь что он может
+                                        возразиться,
+                                        как же мне помог Андрей водителя экспедитор показал что бояться тут нечего о
+                                        самое
+                                        главное место присутствие даже не понадобилось. Спасибо, скитания за то что они
+                                        все
+                                        закрыли этот вопрос под ключ.</p>
+                                </div>
+                            </div>
+                            <div class="review__slide swiper-slide">
+                                <div class="review__pic">
+                                    <img src="/assets/img/rewiew__avatr.png" alt="Аватар Ольга И.">
+                                </div>
+                                <div class="review__info">
+                                    <h4 class="review__name">Ольга И.</h4>
+                                    <p class="review__city">Красногорск</p>
+                                    <p class="review__text">Я всегда боюсь газа, а скоро не боюсь что он может
+                                        возразиться,
+                                        как же мне помог Андрей водителя экспедитор показал что бояться тут нечего о
+                                        самое
+                                        главное место присутствие даже не понадобилось. Спасибо, скитания за то что они
+                                        все
+                                        закрыли этот вопрос под ключ.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Кнопки навигации -->
+                        <div class="review__swiper-button-next swiper-button-next">
+                            <img src="/assets/img/review__arrow-rt.svg" alt="Следующий слайд">
+                        </div>
+                        <div class="review__swiper-button-prev swiper-button-prev">
+                            <img src="/assets/img/review__arrow-lt.svg" alt="Предыдущий слайд">
+                        </div>
+
+                        <!-- Пагинация -->
+                        <div class="review__pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="answer__section dark__blue-section">
+            <div class="container">
+                <div class="answer__wrapper">
+                    <h3 class="answer__title">Ответы на часто задаваемые вопросы</h3>
+                    <div class="accordeon">
+                        <div class="tab">
+                            <input type="checkbox" id="tab1" name="tab-group">
+                            <label for="tab1" class="tab-title">Есть ли у вас инженеры в компании?</label>
+                            <section class="tab-content">
+                                <p>За счёт длинны в 50 м. делаем заправку не заезжая и не портим газон, а так же не
+                                    мешаем соседям</p>
+                            </section>
+                        </div>
+                        <div class="tab">
+                            <input type="checkbox" id="tab2" name="tab-group">
+                            <label for="tab2" class="tab-title">Делаете ли вы отчистку газгольдера?</label>
+                            <section class="tab-content">
+                                <p>За счёт длинны в 50 м. делаем заправку не заезжая и не портим газон, а так же не
+                                    мешаем соседям</p>
+                            </section>
+                        </div>
+                        <div class="tab">
+                            <input type="checkbox" id="tab3" name="tab-group">
+                            <label for="tab3" class="tab-title">А вы не испортите газон у меня и соседей?</label>
+                            <section class="tab-content">
+                                <p>За счёт длинны в 50 м. делаем заправку не заезжая и не портим газон, а так же не
+                                    мешаем соседям</p>
+                            </section>
+                        </div>
+                        <div class="tab">
+                            <input type="checkbox" id="tab4" name="tab-group">
+                            <label for="tab4" class="tab-title">Вы предоставляете документы для субсидий?</label>
+                            <section class="tab-content">
+                                <p>За счёт длинны в 50 м. делаем заправку не заезжая и не портим газон, а так же не
+                                    мешаем соседям</p>
+                            </section>
+                        </div>
+                        <div class="tab">
+                            <input type="checkbox" id="tab5" name="tab-group">
+                            <label for="tab5" class="tab-title">Смогу ли я заказать во время праздников?</label>
+                            <section class="tab-content">
+                                <p>За счёт длинны в 50 м. делаем заправку не заезжая и не портим газон, а так же не
+                                    мешаем соседям</p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="feedback__section">
+            <div class="container">
+                <div class="feedback__form">
+                    <div class="form__section-wrapper">
+                        <form action="mailto:" class="form">
+                            <label for="input-name" id="form__title" class="form__title">Не нашли ответа на свой вопрос
+                                задайте их нашему специалисту </label>
+                            <input id="input-name" type="text" placeholder="Имя" class="form__name">
+                            <input id="input-tel" type="tel" placeholder="Телефон" class="form__tel">
+                            <input id="input-text" type="text" placeholder="ваш вопрос" class="form__text">
+
+                            <button class="form__btn">Задать вопрос</button>
+                        </form>
+                        <div class="feedback__avatar">
+                            <img src="/assets/img/manager.png" alt="">
+                            <div class="feedback__avatar-content">
+                                <h4>Роман Ш.</h4>
+                                <p class="content__descr">Старший менеджер</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="brand__section">
+            <div class="container">
+                <div class="brand__wrapper">
+                    <a href="#" class="brand__link"><img src="/assets/img/brand-6.png" alt="" class="brand__pic"></a>
+                    <a href="" class="brand__link"><img src="/assets/img/brand-2.png" alt="" class="brand__pic"></a>
+                    <a href="" class="brand__link"><img src="/assets/img/brand-3.png" alt="" class="brand__pic"></a>
+                    <a href="" class="brand__link"><img src="/assets/img/brand-4.png" alt="" class="brand__pic"></a>
+                    <a href="" class="brand__link"><img src="/assets/img/brand-5.png" alt="" class="brand__pic"></a>
+                    <a href="" class="brand__link"><img src="/assets/img/brand-6.png" alt="" class="brand__pic"></a>
+                </div>
+            </div>
+        </section>
+        <section class="order-sale__section">
+            <div class="container">
+                <div class="order-sale__wrapper">
+                    <h2 class="order-sale__title">
+                        Закажи прямо сейчас и получи <br>
+                        бесплатную установку телеметрии
+                    </h2>
+                    <button class="order-sale__btn">Заказать газ</button>
+                </div>
+            </div>
+        </section>
+        <section class="map__section">
+            <div class="container">
+                <div class="map__wrapper">
+                    <div class="map__info">
+                        <h3 class="map__title">
+                            Посетите наш уютный офис
+                        </h3>
+                        <p class="map__subtitle">
+                            где мы сможем вас полностью
+                            проконсультировать по всем вопросам
+                        </p>
+                        <div class="map__address">
+                            <span>Офис</span>
+                            <address>
+                                Видное , Белокаменное шоссе, 20
+                            </address>
+                        </div>
+                        <div class="map__tel">
+                            <span>Телефон:</span>
+                            <a href="tel:+79263306834">+7 926 330-68-34</a>
+                        </div>
+                    </div>
+                    <div class="map__card">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2257.133493992948!2d37.769984076146145!3d55.54746100778935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTXCsDMyJzUwLjkiTiAzN8KwNDYnMjEuMiJF!5e0!3m2!1sru!2sru!4v1747056447623!5m2!1sru!2sru"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="privacy__section">
+            <div class="container">
+                <div class="privacy__wrapper">
+                    <a href="#" class="privacy__link">Политика конфиденциальности</a>
+                    <a href="#" class="privacy__link">Согласие на обработку персональных данных</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

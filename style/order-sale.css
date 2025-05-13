@@ -1,0 +1,51 @@
+.order-sale__section {}
+
+.order-sale__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.order-sale__title {
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    color: var(--blue);
+}
+
+.order-sale__btn {
+    padding: 29px 60px;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    text-shadow: 1px 2px 0 0 rgba(0, 0, 0, 0.25);
+    border-radius: 11px;
+    background-color: var(--blue);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.order-sale__btn:hover {
+    opacity: 0.8;
+}
+
+@media (max-width:700px) {
+    .order-sale__btn{
+        padding: 15px 30px;
+        font-size: 20px;
+    }
+    .order-sale__title {
+        font-size: 26px;
+    }
+}
+@media (max-width:500px){
+    .order-sale__btn{
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+    .order-sale__title {
+        font-size: 18px;
+    }
+}
