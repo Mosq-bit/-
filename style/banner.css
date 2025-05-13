@@ -36,7 +36,7 @@
     margin: 0 auto;
     width: min(100%, 1037px);
     height: 477px;
-    background-image: url(/assets/img/hero-pic.svg);
+    background-image: url(/-/assets/img/hero-pic.svg);
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
